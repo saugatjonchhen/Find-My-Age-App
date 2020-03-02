@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun buttonGetAgeClick() {
+    private fun buttonGetAgeClick() {
         val userDOB = Integer.parseInt(editTextDOB.text.toString())
         val currentYear = Calendar.getInstance().get(Calendar.YEAR)
         if (userDOB > currentYear) {
